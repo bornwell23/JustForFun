@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+circlything
+</title>
+<style>
+body { background-color: black;
+	   color: #0f0; }
+p    { height: 100px;
+       width: 100px;
+	   margin: 0;
+	   border-radius: 50px;
+	   background-color: black;
+	   float: left; }
+#c6, #c11, #c16, #c21 { clear: left; }
+</style>
+<script>
+var x = 3;
+var y = 3;
+var z = 3;
+function start() {
+	setTimeout(function(){rotate3()},150);
+}
+function rotate3() {
+	current = "c" + x;
+	document.getElementById(current).style.backgroundColor = "#0f0";
+	x = 9;
+	past = "c" + y;
+	document.getElementById(past).style.backgroundColor = "#81F781";
+	y = 7;
+	empty = "c" + z;
+	document.getElementById(past).style.backgroundColor = "black";
+	y = 11;
+	setTimeout(function(){rotate9()},150);
+}
+function rotate9() {
+	current = "c" + x;
+	document.getElementById(current).style.backgroundColor = "#0f0";
+	x = 15;
+	past = "c" + y;
+	document.getElementById(past).style.backgroundColor = "#81F781";
+	y = 3;
+	empty = "c" + z;
+	document.getElementById(past).style.backgroundColor = "black";
+	y = 7;
+	setTimeout(function(){rotate15()},150);
+}
+function rotate15() {
+	current = "c" + x;
+	document.getElementById(current).style.backgroundColor = "#0f0";
+	x = 19;
+	past = "c" + y;
+	document.getElementById(past).style.backgroundColor = "#81F781";
+	y = 9;
+	empty = "c" + z;
+	document.getElementById(past).style.backgroundColor = "black";
+	y = 3;
+	setTimeout(function(){rotate19()},150);
+}
+function rotate19() {
+	current = "c" + x;
+	document.getElementById(current).style.backgroundColor = "#0f0";
+	x = 23;
+	past = "c" + y;
+	document.getElementById(past).style.backgroundColor = "#81F781";
+	y = 15;
+	empty = "c" + z;
+	document.getElementById(past).style.backgroundColor = "black";
+	y = 9;
+	setTimeout(function(){rotate23()},150);
+}
+function rotate23() {
+	current = "c" + x;
+	document.getElementById(current).style.backgroundColor = "#0f0";
+	x = 17;
+	past = "c" + y;
+	document.getElementById(past).style.backgroundColor = "#81F781";
+	y = 19;
+	empty = "c" + z;
+	document.getElementById(past).style.backgroundColor = "black";
+	y = 15;
+	setTimeout(function(){rotate17()},150);
+}
+function rotate17() {
+	current = "c" + x;
+	document.getElementById(current).style.backgroundColor = "#0f0";
+	x = 11;
+	past = "c" + y;
+	document.getElementById(past).style.backgroundColor = "#81F781";
+	y = 23;
+	empty = "c" + z;
+	document.getElementById(past).style.backgroundColor = "black";
+	y = 19;
+	setTimeout(function(){rotate11()},150);
+}
+function rotate11() {
+	current = "c" + x;
+	document.getElementById(current).style.backgroundColor = "#0f0";
+	x = 7;
+	past = "c" + y;
+	document.getElementById(past).style.backgroundColor = "#81F781";
+	y = 17;
+	empty = "c" + z;
+	document.getElementById(past).style.backgroundColor = "black";
+	y = 23;
+	setTimeout(function(){rotate7()},150);
+}
+function rotate7() {
+	current = "c" + x;
+	document.getElementById(current).style.backgroundColor = "#0f0";
+	x = 3;
+	past = "c" + y;
+	document.getElementById(past).style.backgroundColor = "#81F781";
+	y = 11;
+	empty = "c" + z;
+	document.getElementById(past).style.backgroundColor = "black";
+	y = 17;
+	setTimeout(function(){rotate3()},150);
+}
+</script>
+</head>
+<body onload="start();">
+<p id="c1" /><p id="c2" /><p id="c3" /><p id="c4" /><p id="c5" />
+<p id="c6" /><p id="c7" /><p id="c8" /><p id="c9" /><p id="c10" />
+<p id="c11" /><p id="c12" /><p id="c13" /><p id="c14" /><p id="c15" />
+<p id="c16" /><p id="c17" /><p id="c18" /><p id="c19" /><p id="c20" />
+<p id="c21" /><p id="c22" /><p id="c23" /><p id="c24" /><p id="c25" />
+</body>
