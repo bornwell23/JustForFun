@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		body{ 
+				background-color:black;
+			   	color:#0f0;
+			}
+		p 	{
+				float:left;
+				margin:0px;
+		   		width:12px;
+		   	}
+		</style>
+		<script>
+			function divtrix() {
+				div();
+				setInterval(function(){tri()},.001);
+				setInterval(function(){x()},.001);
+			}
+
+			function div() {
+				var wide = document.body.clientWidth;
+				var lines = Math.floor(wide/12.5);
+				var tick = 0;
+				while (tick < lines) {
+					document.getElementById("wrap").innerHTML += "<p id=" + tick + "></p>";
+					++tick;
+				}
+			}
+			function tri() {
+				var wide = document.body.clientWidth;
+				var lines = Math.floor(wide/12.5);
+				var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+				var striLen = 1;
+				var string = '';
+				for (var i=0; i<striLen; i++) {
+					var rnum = Math.floor(Math.random() * chars.length);
+					string += chars.substring(rnum,rnum+1);
+				}
+				var ran = String(Math.floor(Math.random()*lines));
+				document.getElementById(ran).innerHTML += string + "<br>";
+			}
+
+			function x() {
+				window.scrollTo(0, document.body.scrollHeight);
+			}
+		</script>
+	</head>
+	<body onload="divtrix();">
+		<div id="wrap">
+		</div>
+	</body>
+</html>
